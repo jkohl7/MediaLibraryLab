@@ -1,2 +1,6 @@
 2020-10-05 09:07:13.2658|INFO|MediaLibraryLab.Program|Program started
 2020-10-05 09:07:13.9871|INFO|MediaLibraryLab.Program|Program ended
+2020-10-05 09:17:54.6981|INFO|MovieListing.Program|Program started
+2020-10-05 09:22:25.1595|INFO|MovieListing.Program|Program started
+2020-10-05 09:22:25.1866|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-05 09:22:25.1993|INFO|MovieListing.Program|Program ended

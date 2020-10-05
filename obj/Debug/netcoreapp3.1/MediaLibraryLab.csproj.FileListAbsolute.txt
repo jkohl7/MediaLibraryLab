@@ -1,0 +1,17 @@
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.exe
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.deps.json
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.runtimeconfig.json
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.runtimeconfig.dev.json
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.dll
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\MediaLibraryLab.pdb
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\NLog.dll
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+E:\.Net 2020\MediaLibraryLab\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.csprojAssemblyReference.cache
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.AssemblyInfoInputs.cache
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.AssemblyInfo.cs
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.csproj.CoreCompileInputs.cache
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.csproj.CopyComplete
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.dll
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.pdb
+E:\.Net 2020\MediaLibraryLab\obj\Debug\netcoreapp3.1\MediaLibraryLab.genruntimeconfig.cache

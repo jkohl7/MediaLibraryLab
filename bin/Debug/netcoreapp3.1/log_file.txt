@@ -1,0 +1,2 @@
+2020-10-05 09:07:13.2658|INFO|MediaLibraryLab.Program|Program started
+2020-10-05 09:07:13.9871|INFO|MediaLibraryLab.Program|Program ended

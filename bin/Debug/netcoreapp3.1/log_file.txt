@@ -4,3 +4,11 @@
 2020-10-05 09:22:25.1595|INFO|MovieListing.Program|Program started
 2020-10-05 09:22:25.1866|ERROR|MovieListing.Program|Index was outside the bounds of the array.
 2020-10-05 09:22:25.1993|INFO|MovieListing.Program|Program ended
+2020-10-05 09:36:54.9454|INFO|MovieListing.Program|Program started
+2020-10-05 09:36:54.9770|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-05 09:36:54.9844|INFO|MovieListing.Program|Movies in file 1
+2020-10-05 09:36:57.0509|INFO|MovieListing.Program|User choice: "1"
+2020-10-05 09:37:56.0680|INFO|MovieListing.Program|Program started
+2020-10-05 09:37:56.1002|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-05 09:37:56.1068|INFO|MovieListing.Program|Movies in file 1
+2020-10-05 09:37:58.8101|INFO|MovieListing.Program|User choice: "1"

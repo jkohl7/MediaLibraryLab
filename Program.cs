@@ -30,7 +30,7 @@ namespace MovieListing
                 List<string> MovieTitles = new List<string>();
                 List<string> MovieGenres = new List<string>();
                 List<string> MovieDirector = new List<string>();
-                List<UInt64> MovieRunTime = new List<UInt64>();
+                List<string> MovieRunTime = new List<string>();
                 // to populate the lists with data, read from the data file
                 try
                 {
@@ -55,10 +55,10 @@ namespace MovieListing
                             //3rd array element contains movie director
                             MovieDirector.Add(movieDetails[2]);
                             //4th array element contains movie run time
-                            MovieRunTime.Add(UInt64.Parse(movieDetails[3]));
+                            MovieRunTime.Add(movieDetails[3]);
                             // 5th array element contains movie genre(s)
                             // replace "|" with ", "
-                            MovieGenres.Add(movieDetails[2].Replace("|", ", "));
+                            MovieGenres.Add(movieDetails[4].Replace("|", ", "));
                         }
                          else
                         {
@@ -83,8 +83,98 @@ namespace MovieListing
                 {
                     logger.Error(ex.Message);
                 }
-                logger.Info("Program ended");
+                 string choice;
+                
+                do
+                {
+                      logger.Info("Movies in file {Count}", MovieIds.Count);
+                    // display choices to user
+                    Console.WriteLine("1) Add Movie");
+                    Console.WriteLine("2) Display All Movies");
+                    Console.WriteLine("Enter to quit");
+
+                    // input selection
+                    choice = Console.ReadLine();
+                    logger.Info("User choice: {Choice}", choice);
+
+                    if (choice == "1")
+                    {
+                        // Add Movie
+                        // ask user to input movie title
+                        Console.WriteLine("Enter the movie title");
+                        // input title
+                        string movieTitle = Console.ReadLine();
+                        // check for duplicate title
+                        List<string> LowerCaseMovieTitles = MovieTitles.ConvertAll(t => t.ToLower());
+                        if (LowerCaseMovieTitles.Contains(movieTitle.ToLower()))
+                        {
+                            logger.Info("Duplicate movie title {Title}", movieTitle);
+                        }
+                        else
+                        {
+                            // generate movie id - use max value in MovieIds + 1
+                            UInt64 movieId = MovieIds.Max() + 1;
+                            //ask for director
+                            Console.WriteLine("Enter movie director");
+                            string director = Console.ReadLine();
+                            //get run time
+                            Console.WriteLine("Enter movie run time (separated by :)");
+                            string runtime = Console.ReadLine();
+                            // input genres
+                            List<string> genres = new List<string>();
+                            string genre;
+                            do
+                            {
+                                // ask user to enter genre
+                                Console.WriteLine("Enter genre (or done to quit)");
+                                // input genre
+                                genre = Console.ReadLine();
+                                // if user enters "done"
+                                // or does not enter a genre do not add it to list
+                                if (genre != "done" && genre.Length > 0)
+                                {
+                                    genres.Add(genre);
+                                }
+                            } while (genre != "done");
+                            // specify if no genres are entered
+                            if (genres.Count == 0)
+                            {
+                                genres.Add("(no genres listed)");
+                            }
+                            // use "|" as delimeter for genres
+                            string genresString = string.Join("|", genres);
+                            // if there is a comma(,) in the title, wrap it in quotes
+                            movieTitle = movieTitle.IndexOf(',') != -1 ? $"\"{movieTitle}\"" : movieTitle;
+                            // create file from data
+                            StreamWriter sw = new StreamWriter(file, true);
+                            sw.WriteLine($"{movieId},{movieTitle},{MovieDirector},{MovieRunTime},{genresString}");
+                            sw.Close();
+                            // add movie details to Lists
+                            MovieIds.Add(movieId);
+                            MovieTitles.Add(movieTitle);
+                            MovieDirector.Add(director);
+                            MovieRunTime.Add(runtime);
+                            MovieGenres.Add(genresString);
+                            // log transaction
+                            logger.Info("Movie id {Id} added", movieId);
+                        }
+                    }
+                    else if (choice == "2")
+                    {
+                    //     // loop thru Movie Lists
+                    // for (int i = 0; i < MovieIds.Count; i++)
+                    // {
+                    //     // display movie details
+                    //     Console.WriteLine($"Id: {MovieIds[i]}");
+                    //     Console.WriteLine($"Title: {MovieTitles[i]}");
+                    //     Console.WriteLine($"Genre(s): {MovieGenres[i]}");
+                    //     Console.WriteLine();
+                    // }
+                    }
+                } while (choice == "1" || choice == "2");
             }
+            
+            logger.Info("Program ended");
         }
     }
 }

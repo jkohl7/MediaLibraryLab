@@ -24,6 +24,7 @@ namespace MovieListing
             }
             else
             {
+                    
             // create parallel lists of movie details
             // lists are used since we do not know number of lines of data
              List<UInt64> MovieIds = new List<UInt64>();
@@ -161,15 +162,17 @@ namespace MovieListing
                     }
                     else if (choice == "2")
                     {
-                    //     // loop thru Movie Lists
-                    // for (int i = 0; i < MovieIds.Count; i++)
-                    // {
-                    //     // display movie details
-                    //     Console.WriteLine($"Id: {MovieIds[i]}");
-                    //     Console.WriteLine($"Title: {MovieTitles[i]}");
-                    //     Console.WriteLine($"Genre(s): {MovieGenres[i]}");
-                    //     Console.WriteLine();
-                    // }
+                        // loop thru Movie Lists
+                    for (int i = 0; i < MovieIds.Count; i++)
+                    {
+                        // display movie details
+                        Console.WriteLine($"Id: {MovieIds[i]}");
+                        Console.WriteLine($"Title: {MovieTitles[i]}");
+                        Console.WriteLine($"Director: {MovieDirector[i]}");
+                        Console.WriteLine($"Director: {MovieRunTime[i]}");
+                        Console.WriteLine($"Genre(s): {MovieGenres[i]}");
+                        Console.WriteLine();
+                    }
                     }
                 } while (choice == "1" || choice == "2");
             }

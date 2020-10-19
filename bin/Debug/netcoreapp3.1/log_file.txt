@@ -12,3 +12,25 @@
 2020-10-05 09:37:56.1002|ERROR|MovieListing.Program|Index was outside the bounds of the array.
 2020-10-05 09:37:56.1068|INFO|MovieListing.Program|Movies in file 1
 2020-10-05 09:37:58.8101|INFO|MovieListing.Program|User choice: "1"
+2020-10-19 08:09:12.6365|INFO|MovieListing.Program|Program started
+2020-10-19 08:09:12.6848|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-19 08:09:12.6912|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:09:15.6901|INFO|MovieListing.Program|User choice: "2"
+2020-10-19 08:09:15.7060|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:09:20.7534|INFO|MovieListing.Program|User choice: "1"
+2020-10-19 08:55:47.2239|INFO|MovieListing.Program|Program started
+2020-10-19 08:55:47.2587|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-19 08:55:47.2684|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:55:48.7892|INFO|MovieListing.Program|User choice: "2"
+2020-10-19 08:57:23.6735|INFO|MovieListing.Program|Program started
+2020-10-19 08:57:23.7087|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-19 08:57:23.7087|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:57:24.3489|INFO|MovieListing.Program|User choice: "2"
+2020-10-19 08:57:32.6613|INFO|MovieListing.Program|Program started
+2020-10-19 08:57:32.6945|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-19 08:57:32.7024|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:57:33.9645|INFO|MovieListing.Program|User choice: "1"
+2020-10-19 08:58:52.3821|INFO|MovieListing.Program|Program started
+2020-10-19 08:58:52.4173|ERROR|MovieListing.Program|Index was outside the bounds of the array.
+2020-10-19 08:58:52.4246|INFO|MovieListing.Program|Movies in file 1
+2020-10-19 08:58:53.7886|INFO|MovieListing.Program|User choice: "1"
